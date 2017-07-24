@@ -39,7 +39,7 @@ def plot(a, x0=0.1, iterations=50):
 
 
 def main():
-	plot(2)
+	plot(4, 0.2)
 	
 
 if __name__ == "__main__":
