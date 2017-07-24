@@ -5,9 +5,14 @@ def plot(a, x0=0.1):
 	""" Plot a cobweb graph using the equation:
 		a * x * (1 - x)
 	
-		It does 50 iterations to plot the graph and 
-		the default value of x0 is 0.1
+		It does 50 iterations to plot the graph. 
+		
+		The default value of x0 is 0.1 and it must 
+		be in the interval ]0, 1[
 	"""
+
+	# If x0 isn't valid 
+	if x0 <= 0 or x0 >= 1: return
 
 	# Plot f(x) = ax(1 - x)
 	x = np.linspace(0, 1, 1000)
@@ -32,7 +37,7 @@ def plot(a, x0=0.1):
 
 
 def main():
-	plot(2)
+	plot(3.3, 0.9)
 	
 
 if __name__ == "__main__":
